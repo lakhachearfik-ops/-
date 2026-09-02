@@ -1,48 +1,92 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="أذكاري - أذكار الصباح والمساء بطريقة سهلة وجميلة مع عداد للتكرار.">
-  <meta name="theme-color" content="#0f766e">
-  <title>أذكاري | أذكار الصباح والمساء</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="hero">
-    <div class="container">
-      <div class="brand">أذكاري</div>
-      <p>أذكار الصباح والمساء في مكان واحد</p>
-      <div class="tabs">
-        <button class="tab active" data-mode="morning">🌅 أذكار الصباح</button>
-        <button class="tab" data-mode="evening">🌙 أذكار المساء</button>
-      </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>أذكاري | أذكار الصباح والمساء وأذكار النوم</title>  <meta name="description" content="أذكاري هو موقع مجاني لقراءة أذكار الصباح والمساء وأذكار النوم والأذكار اليومية بسهولة، مع عداد لمتابعة التكرار والتقدم.">  <meta name="keywords" content="أذكار, أذكار الصباح, أذكار المساء, أذكار النوم, أذكار يومية, اذكار الصباح والمساء">  <meta name="theme-color" content="#0f766e">  <meta name="robots" content="index, follow">  <link rel="canonical" href="https://lakhachearfik-ops.github.io/-/">  <link rel="stylesheet" href="style.css">
+</head><body>  <header class="hero">
+    <div class="container">  <div class="brand">أذكاري 🤲</div>
+
+  <p>
+    أذكار الصباح والمساء والأذكار اليومية في مكان واحد
+  </p>
+
+  <nav class="tabs" aria-label="اختيار نوع الأذكار">
+
+    <button class="tab active" data-mode="morning">
+      🌅 أذكار الصباح
+    </button>
+
+    <button class="tab" data-mode="evening">
+      🌙 أذكار المساء
+    </button>
+
+  </nav>
+
+</div>
+
+  </header>  <main class="container"><section class="intro">
+
+  <h1 id="pageTitle">أذكار الصباح</h1>
+
+  <p>
+    اقرأ الأذكار بهدوء واضغط على العداد بعد كل تكرار حتى تكمل العدد المطلوب.
+  </p>
+
+  <div class="progress-wrap">
+
+    <div class="progress-info">
+      <span>التقدم اليومي</span>
+      <strong id="progressText">0 / 10</strong>
     </div>
-  </header>
 
-  <main class="container">
-    <section class="intro">
-      <h1 id="pageTitle">أذكار الصباح</h1>
-      <p>اقرأ الذكر واضغط على زر العدّاد حتى تكمل العدد المطلوب.</p>
-      <div class="progress-wrap">
-        <div class="progress-info"><span>التقدم</span><strong id="progressText">0 / 10</strong></div>
-        <div class="progress"><div id="progressBar"></div></div>
-      </div>
-      <button id="resetAll" class="reset">↻ إعادة الأعداد</button>
-    </section>
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
 
-    <section id="adhkarList" class="adhkar-list"></section>
+  </div>
 
-    <section class="done" id="doneBox">
-      <div>✨ أحسنت! أكملت أذكار اليوم.</div>
-    </section>
+  <button id="resetAll" class="reset">
+    ↻ إعادة الأعداد
+  </button>
 
-    <footer>
-      <p>موقع أذكاري — مشروع مجاني مفتوح للاستضافة عبر GitHub Pages.</p>
-      <p class="small">تم تنظيم المحتوى من مصادر الأذكار، ويُنصح بمراجعة النصوص والتخريج قبل اعتماد الموقع كمصدر ديني نهائي.</p>
-    </footer>
-  </main>
+</section>
 
-  <script src="script.js"></script>
-</body>
+<section
+  id="adhkarList"
+  class="adhkar-list"
+  aria-label="قائمة الأذكار">
+</section>
+
+<section class="done" id="doneBox" aria-live="polite">
+
+  <div>
+    ✨ أحسنت! أكملت أذكار اليوم.
+  </div>
+
+</section>
+
+<section class="about">
+
+  <h2>عن موقع أذكاري</h2>
+
+  <p>
+    أذكاري موقع مجاني يساعدك على قراءة أذكار الصباح والمساء
+    ومتابعة عدد مرات التكرار بسهولة من الهاتف أو الحاسوب.
+  </p>
+
+</section>
+
+<footer>
+
+  <p>
+    © 2026 أذكاري — موقع مجاني للأذكار اليومية.
+  </p>
+
+  <p class="small">
+    يُنصح بمراجعة نصوص الأذكار ومصادرها والتخريج قبل اعتماد الموقع
+    كمصدر ديني نهائي.
+  </p>
+
+</footer>
+
+  </main>  <script src="script.js"></script></body>
 </html>
